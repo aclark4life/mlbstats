@@ -48,6 +48,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'webpack_loader',
 ]
 
 MIDDLEWARE = [
@@ -168,3 +170,13 @@ ALLOWED_HOSTS = ['*']
 import dj_database_url
 DATABASE_URL = os.environ.get('DATABASE_URL', 'postgres://:@:/mlbstats')
 DATABASES['default'] = dj_database_url.parse(DATABASE_URL)
+
+# https://python-webpack-boilerplate.readthedocs.io/en/latest/setup_with_django/
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "frontend/build"),
+]
+
+WEBPACK_LOADER = {
+    'MANIFEST_FILE': os.path.join(BASE_DIR, "frontend/build/manifest.json"),
+}
