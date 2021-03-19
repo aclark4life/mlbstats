@@ -44,5 +44,6 @@ include base.mk
 PROJECT := mlbstats
 serve: django-serve
 
-pack:
-	node_modules/.bin/webpack
+django-serve:
+	cd frontend; npm run watch &
+	python manage.py runserver
