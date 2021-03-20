@@ -47,3 +47,6 @@ serve: django-serve
 django-serve:
 	cd frontend; npm run watch &
 	python manage.py runserver
+
+npm-install:
+	cd frontend; npm install
