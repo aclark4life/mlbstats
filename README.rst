@@ -4,9 +4,11 @@ mlbstats - An exercise in `Sabermetrics <https://en.wikipedia.org/wiki/Sabermetr
 Two demos:
 
 - Draw scatter plot (AKA "spraychart") from Player model data
+
   - Loaded from *exit_velocity.csv* via ``python manage.py load_ev``
 
-- Draw scatter plot with player data from https://baseballsavant.mlb.com/.
+- Draw scatter plot with player data from https://baseballsavant.mlb.com/
+
   - Based on https://www.baseballdatapros.com/posts/4
 
 Had to fork pybaseball to get `scatterplot` function to return matplotlab canvas.
