@@ -7,6 +7,7 @@ class PersonAdmin(ModelAdmin):
     list_display = (
         "last_name",
         "first_name",
+        "events",
         "player_id",
         "attempts",
         "avg_hit_angle",
@@ -24,4 +25,7 @@ class PersonAdmin(ModelAdmin):
         "barrels",
         "brl_percent",
         "brl_pa",
+        "hc_x",
+        "hc_y",
+        "launch_speed",
     )
