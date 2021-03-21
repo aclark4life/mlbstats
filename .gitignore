@@ -4,4 +4,3 @@ pyvenv.cfg
 __pycache__
 frontend/node_modules/
 src/pybaseball/
-exit_velocity.csv
