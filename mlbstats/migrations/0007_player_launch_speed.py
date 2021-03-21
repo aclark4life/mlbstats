@@ -6,13 +6,13 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('mlbstats', '0006_auto_20210321_2050'),
+        ("mlbstats", "0006_auto_20210321_2050"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='player',
-            name='launch_speed',
+            model_name="player",
+            name="launch_speed",
             field=models.DecimalField(decimal_places=1, default=0, max_digits=3),
         ),
     ]

@@ -19,12 +19,12 @@ from django_pandas.io import read_frame
 def spraychart(request):  # http://stackoverflow.com/a/5515994/185820
     """"""
 
-    start_date = '2020-07-23'
-    end_date = '2020-09-28'
+    start_date = "2020-07-23"
+    end_date = "2020-09-28"
 
     df = pyb.statcast_batter(start_date, end_date, 458015)
 
-    home_df = df.loc[df['home_team'] == 'CIN']
+    home_df = df.loc[df["home_team"] == "CIN"]
 
     costs = [[3000, "2018-01-01"], [4000, "2018-02-01"], [3000, "2018-03-01"]]
     grosses = [[10000, "2018-01-01"], [30000, "2018-02-01"], [20000, "2018-03-01"]]
@@ -56,7 +56,9 @@ def spraychart(request):  # http://stackoverflow.com/a/5515994/185820
 
     df = read_frame(players)
 
-    canvas = pyb.spraychart(df, 'reds', title='Joey Votto: 2020 Season',colorby='launch_speed')
+    canvas = pyb.spraychart(
+        df, "reds", title="Joey Votto: 2020 Season", colorby="launch_speed"
+    )
 
     # write image data to a string buffer and get the PNG image bytes
     buf = BytesIO()
