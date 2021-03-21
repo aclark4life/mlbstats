@@ -7,6 +7,7 @@ from wagtail.core import urls as wagtail_urls
 from wagtail.documents import urls as wagtaildocs_urls
 
 from search import views as search_views
+from mlbstats import views as stats_views
 
 from django.views.generic import TemplateView
 
@@ -15,6 +16,7 @@ urlpatterns = [
     path("admin/", include(wagtailadmin_urls)),
     path("documents/", include(wagtaildocs_urls)),
     path("search/", search_views.search, name="search"),
+    path("spraychart/", stats_views.spraychart, name="spraychart"),
     path("", TemplateView.as_view(template_name="home/home_page.html")),  # this is new
 ]
 
