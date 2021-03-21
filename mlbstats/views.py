@@ -1,19 +1,15 @@
+from io import BytesIO
+
 from django.http import HttpResponse
 from django.utils import timezone
-from io import BytesIO
-from matplotlib.dates import DateFormatter
-from matplotlib.dates import date2num
-from matplotlib.figure import Figure
+from django_pandas.io import read_frame
 from matplotlib.backends.backend_agg import FigureCanvasAgg
-
+from matplotlib.dates import DateFormatter, date2num
+from matplotlib.figure import Figure
 
 import pybaseball as pyb
 
-
 from .models import Player
-
-
-from django_pandas.io import read_frame
 
 
 def spraychart(request):  # http://stackoverflow.com/a/5515994/185820
