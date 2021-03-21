@@ -11,7 +11,7 @@ Two demos:
 
   - Based on example from https://www.baseballdatapros.com/posts/4
 
-Had to `fork pybaseball <https://github.com/aclark4life/pybaseball>`_ to get `scatterplot` function to return matplotlab canvas.
+Had to `fork pybaseball <https://github.com/aclark4life/pybaseball>`_ to get ``scatterplot`` function to return matplotlab canvas.
 
 Install
 -------
