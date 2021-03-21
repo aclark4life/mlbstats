@@ -13,7 +13,9 @@ from .models import Player
 
 
 def spraychart(request):  # http://stackoverflow.com/a/5515994/185820
-    """"""
+    """
+    Example from https://www.baseballdatapros.com/posts/4
+    """
 
     start_date = "2020-07-23"
     end_date = "2020-09-28"
@@ -22,6 +24,7 @@ def spraychart(request):  # http://stackoverflow.com/a/5515994/185820
 
     home_df = df.loc[df["home_team"] == "CIN"]
 
+    # Rely on fork of pybaseball to return canvas https://github.com/aclark4life/pybaseball
     canvas = pyb.spraychart(
         home_df, "reds", title="Joey Votto: 2020 Season", colorby="launch_speed"
     )
@@ -36,12 +39,15 @@ def spraychart(request):  # http://stackoverflow.com/a/5515994/185820
 
 
 def spraychart2(request):  # http://stackoverflow.com/a/5515994/185820
-    """"""
+    """
+    Data from database
+    """
 
     players = Player.objects.all()
 
     df = read_frame(players)
 
+    # Rely on fork of pybaseball to return canvas https://github.com/aclark4life/pybaseball
     canvas = pyb.spraychart(
         df, "reds", title="Joey Votto: 2020 Season", colorby="launch_speed"
     )
