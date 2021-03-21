@@ -7,7 +7,7 @@ Two demos:
 
   - Loaded from *exit_velocity.csv* via ``python manage.py load_ev``
 
-- Draw scatter plot with player data from https://baseballsavant.mlb.com/
+- Draw scatter plot (AKA "spraychart") with player data from https://baseballsavant.mlb.com/
 
   - Based on example from https://www.baseballdatapros.com/posts/4
 
