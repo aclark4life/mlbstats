@@ -7,6 +7,8 @@ Based on
 - https://www.baseballdatapros.com/posts/4
 - https://github.com/aclark4life/pybaseball
 - https://github.com/aclark4life/aclarknet-best-pro/blob/master/aclark/db/plot.py
+- https://baseballsavant.mlb.com/
+- https://public.tableau.com/profile/datavizard#!/vizhome/HomeRunTracker/HomeRunsTracker
 
 Screenshots
 -----------
