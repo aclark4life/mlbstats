@@ -38,9 +38,12 @@ class Command(BaseCommand):
                 player_id=player_id,
                 attempts=attempts,
                 avg_hit_angle=avg_hit_angle,
+                hc_y=avg_hit_angle,  # Close enough
                 anglesweetspotpercent=anglesweetspotpercent,
+                hc_x=anglesweetspotpercent,  # Close enough
                 # max_hit_speed=max_hit_speed,
                 avg_hit_speed=avg_hit_speed,
+                launch_speed=avg_hit_speed,  # Close enough
                 # fbld=fbld,
                 gb=gb,
                 max_distance=max_distance,
