@@ -10,6 +10,7 @@ Based on
 - https://baseballsavant.mlb.com/
 - https://public.tableau.com/profile/datavizard#!/vizhome/HomeRunTracker/HomeRunsTracker
 - https://github.com/AccordBox/python-webpack-boilerplate
+- https://github.com/aclark4life/project-makefile
 
 Screenshots
 -----------
