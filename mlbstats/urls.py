@@ -15,6 +15,7 @@ urlpatterns = [
     path("documents/", include(wagtaildocs_urls)),
     path("search/", search_views.search, name="search"),
     path("spraychart/", stats_views.spraychart, name="spraychart"),
+    path("spraychart2/", stats_views.spraychart2, name="spraychart2"),
     path("", TemplateView.as_view(template_name="home/home_page.html")),  # this is new
 ]
 
