@@ -9,7 +9,7 @@ Two demos:
 
 - Draw scatter plot with player data from https://baseballsavant.mlb.com/
 
-  - Based on https://www.baseballdatapros.com/posts/4
+  - Based on example from https://www.baseballdatapros.com/posts/4
 
 Had to fork pybaseball to get `scatterplot` function to return matplotlab canvas.
 
