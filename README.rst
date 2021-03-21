@@ -9,6 +9,7 @@ Based on
 - https://github.com/aclark4life/aclarknet-best-pro/blob/master/aclark/db/plot.py
 - https://baseballsavant.mlb.com/
 - https://public.tableau.com/profile/datavizard#!/vizhome/HomeRunTracker/HomeRunsTracker
+- https://github.com/AccordBox/python-webpack-boilerplate
 
 Screenshots
 -----------
