@@ -1,7 +1,7 @@
 from django.db import models
 
 
-class Person(models.Model):
+class Player(models.Model):
     """
     Model exit_velocity.csv from https://baseballsavant.mlb.com/statcast_field
 
