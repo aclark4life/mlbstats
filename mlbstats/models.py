@@ -12,8 +12,8 @@ class Player(models.Model):
     Tatis Jr., Fernando,665487,164,8.7,32.3,113.4,95.9,100.2,91.6,458,176,410,102,22.1,62.2,32,19.5,12.5
     """
 
-    last_name = models.CharField(max_length=255, default="")
-    first_name = models.CharField(max_length=255, default="")
+    last_name = models.CharField(max_length=255, default="", blank=True)
+    first_name = models.CharField(max_length=255, default="", blank=True)
     player_id = models.IntegerField(default=0)
     attempts = models.IntegerField(default=0)
     avg_hit_angle = models.DecimalField(max_digits=3, decimal_places=1, default=0)
