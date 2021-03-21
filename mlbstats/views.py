@@ -10,6 +10,12 @@ from matplotlib.backends.backend_agg import FigureCanvasAgg
 import pybaseball as pyb
 
 
+from .models import Player
+
+
+from django_pandas.io import read_frame
+
+
 def spraychart(request):  # http://stackoverflow.com/a/5515994/185820
     """"""
 
@@ -46,7 +52,11 @@ def spraychart(request):  # http://stackoverflow.com/a/5515994/185820
     # axes.plot(x3, y3)
     # axes.xaxis.set_major_formatter(DateFormatter("%m"))
 
-    canvas = pyb.spraychart(home_df, 'reds', title='Joey Votto: 2020 Season',colorby='launch_speed')
+    players = Player.objects.all()
+
+    df = read_frame(players)
+
+    canvas = pyb.spraychart(df, 'reds', title='Joey Votto: 2020 Season',colorby='launch_speed')
 
     # write image data to a string buffer and get the PNG image bytes
     buf = BytesIO()

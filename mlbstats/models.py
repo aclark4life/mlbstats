@@ -14,9 +14,13 @@ class Player(models.Model):
 
     last_name = models.CharField(max_length=255, default="", blank=True)
     first_name = models.CharField(max_length=255, default="", blank=True)
+    events = models.CharField(max_length=255, default="", blank=True)
     player_id = models.IntegerField(default=0)
     attempts = models.IntegerField(default=0)
     avg_hit_angle = models.DecimalField(max_digits=3, decimal_places=1, default=0)
+    hc_x = models.DecimalField(max_digits=3, decimal_places=1, default=0)
+    hc_y = models.DecimalField(max_digits=3, decimal_places=1, default=0)
+    launch_speed = models.DecimalField(max_digits=3, decimal_places=1, default=0)
     anglesweetspotpercent = models.DecimalField(
         max_digits=3, decimal_places=1, default=0
     )
