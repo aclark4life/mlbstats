@@ -1,6 +1,19 @@
 mlbstats - An exercise in `Sabermetrics <https://en.wikipedia.org/wiki/Sabermetrics>`_
 ======================================================================================
 
+Install
+-------
+
+::
+
+    make virtualenv
+    source bin/activate
+    make install
+    make npm-install
+    make migrate
+    make load_ev
+    make serve
+
 Based on
 --------
 

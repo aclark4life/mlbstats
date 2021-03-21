@@ -50,3 +50,6 @@ django-serve:
 
 npm-install:
 	cd frontend; npm install
+
+load_ev:
+	python manage.py load_ev
