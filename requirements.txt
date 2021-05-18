@@ -1,6 +1,6 @@
 -e git+https://github.com/aclark4life/pybaseball.git@a5b325392c0d5bdc0ee13bd59344650048ddbea4#egg=pybaseball
 Deprecated==1.2.12
-Django==3.1.7
+Django==3.1.8
 Jinja2==2.11.3
 MarkupSafe==1.1.1
 Pillow==8.1.2
